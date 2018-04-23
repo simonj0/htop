@@ -23,6 +23,7 @@ in the source distribution for its full text.
 #include "HostnameMeter.h"
 #include "LinuxProcess.h"
 #include "TemperatureMeter.h"
+#include "FanMeter.h"
 
 #include <math.h>
 #include <assert.h>
@@ -118,6 +119,7 @@ MeterClass* Platform_meterTypes[] = {
    &SwapMeter_class,
    &TasksMeter_class,
    &TemperatureMeter_class,
+   &FanMeter_class,
    &UptimeMeter_class,
    &BatteryMeter_class,
    &HostnameMeter_class,

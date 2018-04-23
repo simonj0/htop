@@ -67,8 +67,8 @@ static int TemperatureFan_cacheRPM = 0;
 
 void TemperatureFan_getTemperature(int *temperature) {
     time_t now = time(NULL);
-    // refresh if data is 3 seconds old
-    if(now > TemperatureFan_cacheTime + 3) {
+    // refresh if data is 5 seconds old
+    if(now > TemperatureFan_cacheTime + 5) {
         TemperatureFan_getData(&TemperatureFan_cacheTemperature, &TemperatureFan_cacheRPM);
         TemperatureFan_cacheTime = now;
     }
@@ -78,8 +78,8 @@ void TemperatureFan_getTemperature(int *temperature) {
 
 void TemperatureFan_getRPM(int *rpm) {
     time_t now = time(NULL);
-    // refresh if data is 3 seconds old
-    if(now > TemperatureFan_cacheTime + 3) {
+    // refresh if data is 5 seconds old
+    if(now > TemperatureFan_cacheTime + 5) {
         TemperatureFan_getData(&TemperatureFan_cacheTemperature, &TemperatureFan_cacheRPM);
         TemperatureFan_cacheTime = now;
     }

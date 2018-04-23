@@ -79,6 +79,7 @@ typedef enum ColorElements_ {
    TEMPERATURE_COOL,
    TEMPERATURE_MEDIUM,
    TEMPERATURE_HOT,
+   FANSPEED,
    SWAP,
    PROCESS,
    PROCESS_SHADOW,
