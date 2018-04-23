@@ -6,6 +6,7 @@
 htop - TemperatureMeter.h
 (C) 2013 Ralf Stemmer
 (C) 2014 Blair Bonnett
+(C) 2018 Simon J.
 Released under the GNU GPL, see the COPYING file
 in the source distribution for its full text.
 */
