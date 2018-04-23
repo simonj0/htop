@@ -69,8 +69,8 @@ static void TemperatureMeter_display(Object* cast, RichString* out) {
 
       // choose the color for the temperature
       int tempColor;
-      if      (temperature < 60)                      tempColor = coolColor;
-      else if (temperature >= 60 && temperature < 70) tempColor = mediumColor;
+      if      (temperature < 50)                      tempColor = coolColor;
+      else if (temperature >= 50 && temperature < 70) tempColor = mediumColor;
       else                                            tempColor = hotColor;
 
       // output the temperature
