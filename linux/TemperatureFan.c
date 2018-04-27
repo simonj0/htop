@@ -15,7 +15,7 @@ in the source distribution for its full text.
 
 static void TemperatureFan_getData(int *temperature, int *rpm) {
     FILE *p;
-    p = popen("sensors", "r");
+    p = popen("sensors 2>/dev/null", "r");
     if(!p) return;
 
     ssize_t read;
